@@ -16,4 +16,9 @@ router.get('/', (req, res) => {
   res.json(transactions);
 });
 
+// Show
+router.get('/:id', (req, res) => {
+  console.log(req.params, transactions);
+  res.json(transactions[req.params.id]);
+});
 module.exports = router;
