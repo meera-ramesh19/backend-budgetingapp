@@ -28,4 +28,11 @@ router.post('/', (req, res) => {
   res.json(transactions[transactions.length - 1]);
 });
 
+// UPDATE
+router.put('/:id', (req, res) => {
+  const { id } = req.params;
+  const newData = req.body;
+  transactions[id] = newData;
+  res.send(transactions[id]);
+});
 module.exports = router;
