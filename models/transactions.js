@@ -66,7 +66,7 @@ module.exports= [
 
   {
     id: Date.now(),
-    item_name: '',
+    item_name: 'Blue',
     date: 'April 3 2022',
     amount: -7,
     from: 'Rachel',

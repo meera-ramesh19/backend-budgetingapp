@@ -35,4 +35,13 @@ router.put('/:id', (req, res) => {
   transactions[id] = newData;
   res.send(transactions[id]);
 });
+
+//DELETE
+router.delete('/:id', (req, res) => {
+
+  const { id } = req.params;
+  transactions.splice(id, 1);
+  res.send(transactions);
+});
+
 module.exports = router;
