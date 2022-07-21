@@ -21,4 +21,11 @@ router.get('/:id', (req, res) => {
   console.log(req.params, transactions);
   res.json(transactions[req.params.id]);
 });
+
+// Create
+router.post('/', (req, res) => {
+  transactions.push(req.body);
+  res.json(transactions[transactions.length - 1]);
+});
+
 module.exports = router;
