@@ -1,4 +1,4 @@
-module.exports= [
+module.exports = [
   {
     id: Date.now(),
     item_name: 'AirPods',
@@ -6,6 +6,7 @@ module.exports= [
     date: 'April 2 2022',
     from: 'Bob',
     category: 'Electronics',
+    type: expense,
   },
   {
     id: Date.now(),
@@ -14,14 +15,16 @@ module.exports= [
     date: 'April 2 2022',
     from: 'Rachel',
     category: 'Food',
+    type: expense,
   },
   {
     id: Date.now(),
-    item_name: 'Salary',
+    item_name: 'Pay',
     amount: 2000,
     date: 'April 1 2022',
     from: 'Boss',
-    category: 'Income',
+    category: 'Salary',
+    type: expense,
   },
   {
     id: Date.now(),
@@ -30,6 +33,7 @@ module.exports= [
     date: 'April 10 2022',
     from: 'Rachel',
     category: 'Taxes',
+    type: expense,
   },
   {
     id: Date.now(),
@@ -38,6 +42,7 @@ module.exports= [
     date: 'April 1 2022',
     from: 'Rachel',
     category: 'Retirement',
+    type: expense,
   },
   {
     id: Date.now(),
@@ -46,6 +51,7 @@ module.exports= [
     amount: -100,
     from: 'Rachel',
     category: 'Savings',
+    type: expense,
   },
   {
     id: Date.now(),
