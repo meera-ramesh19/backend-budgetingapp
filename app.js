@@ -1,21 +1,20 @@
 const express = require('express');
-const transactions = require('./routes/transactions');
+const transactionController = require('./controllers/transactions');
 
 const app = express();
 const cors = require('cors');
 
-// cors all request should go through this spo thatbrowser should 
-//trusts therequests
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors());
 app.use(express.json());
+app.use('/transactions', transactionController);
 
-// Init Middleware
-app.use(express.json({ extended: false }));
-
-app.use('/transactions', transactions);
-app.use('/*', (req, res) => {
-  res.status(404).send('Not Found!');
+app.get('/', (req, res) => {
+  console.log('Get /');
+  res.send('Home');
 });
 
+app.get('*', (req, res) => {
+  res.sendStatus(404);
+});
 
 module.exports = app;
