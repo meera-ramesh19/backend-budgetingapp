@@ -6,7 +6,7 @@ module.exports = [
     date: 'April 2 2022',
     from: 'Bob',
     category: 'Electronics',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -15,7 +15,7 @@ module.exports = [
     date: 'April 2 2022',
     from: 'Rachel',
     category: 'Drink',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -24,7 +24,7 @@ module.exports = [
     date: 'April 1 2022',
     from: 'Employer',
     category: 'Income',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -33,7 +33,7 @@ module.exports = [
     date: 'April 10 2022',
     from: 'IRS',
     category: 'Taxes',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -42,7 +42,7 @@ module.exports = [
     date: 'April 1 2022',
     from: 'Rachel',
     category: 'Retirement',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -51,7 +51,7 @@ module.exports = [
     amount: -100,
     from: 'Employer',
     category: 'Savings',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -60,7 +60,7 @@ module.exports = [
     amount: -100,
     from: 'Rachel',
     category: 'Bills',
-    type: expense,
+    type: 'expense',
   },
   {
     id: Date.now(),
@@ -69,7 +69,7 @@ module.exports = [
     amount: 20,
     from: 'Aunt Tilda',
     category: 'Gift',
-    type: income
+    type: 'income',
   },
 
   {
@@ -79,6 +79,6 @@ module.exports = [
     amount: 7,
     from: 'Rachel',
     category: 'PetFood',
-    type: expense,
+    type: 'expense',
   },
 ];
