@@ -5,4 +5,4 @@
 
 [Frontend deployment](https://budget-transaction.netlify.app/)
 
-[Backend deploymnent](https://git.heroku.com/boiling-reaches-40375.git/)
+[Backend deploymnent](https://boiling-reaches-40375.herokuapp.com/transactions)
