@@ -1,37 +1,34 @@
 module.exports = [
   {
-    transId: Date.now(),
     itemName: 'salary',
     amount: 2000,
-    date: '04/01/2022',
+    date: '2022/03/04',
     from: 'employer',
     category: 'income',
     type: 'income',
   },
   {
-    transId: Date.now(),
     itemName: 'taxpayment',
-    amount: -300,
-    date: '04/10/2022',
+    amount: 300,
+    date: '2022/04/10',
     from: 'bank',
     category: 'bills',
     type: 'expense',
   },
 
   {
-    transId: Date.now(),
+    // transId: Date.now(),
     itemName: 'pension',
-    date: '04/05/2022',
-    amount: -100,
+    date: '2022/04/04',
+    amount: 100,
     from: 'bank',
     category: 'bills',
     type: 'expense',
   },
 
   {
-    transId: Date.now(),
     itemName: 'gift',
-    date: '06/10/2022',
+    date: '2022/06/10',
     amount: 50,
     from: 'friend',
     category: 'gift',
@@ -39,10 +36,9 @@ module.exports = [
   },
 
   {
-    transId: Date.now(),
     itemName: 'food',
-    date: 'April 3 2022',
-    amount: -40,
+    date: '2022/01/05',
+    amount: 40,
     from: 'grocery',
     category: 'food',
     type: 'expense',
