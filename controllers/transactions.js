@@ -31,7 +31,7 @@ transactions.get('/', (req, res) => {
 // Create
 transactions.post('/', (req, res) => {
   const userTransaction = {
-    transId: Date.now(),
+    transId: new Date(),
     itemName: req.body.itemName,
     date: req.body.date,
     amount: req.body.amount,
@@ -59,7 +59,7 @@ transactions.post('/', (req, res) => {
 transactions.put('/:id', (req, res) => {
   const id = req.params.id;
   const userTransaction = {
-    transId: Date.now(),
+    transId: new Date(),
     itemName: req.body.itemName,
     date: req.body.date,
     amount: req.body.amount,
