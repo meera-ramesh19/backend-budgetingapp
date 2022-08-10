@@ -42,7 +42,7 @@ module.exports = [
     transId: Date.now(),
     itemName: 'food',
     date: '01/05/2022',
-    amount: 40,
+   amount: 40,
     from: 'grocery',
     category: 'food',
     type: 'expense',

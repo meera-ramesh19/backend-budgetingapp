@@ -1,3 +1,4 @@
-.DS_STORE  to .gitignore
-.env  to .gitignore
-node_modules to .gitignore
+
+.env  
+node_modules 
+.DS_STORE 
