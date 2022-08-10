@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 const path = require('path');
+=======
+
+
+>>>>>>> da24e3135089337b3778bd3db629825c465a8a7d
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv').config();
@@ -34,4 +39,11 @@ app.use('/api/transactions', require('./routes/transactionRoutes'));
 
 app.use(errorHandler);
 
+<<<<<<< HEAD
 app.listen(port, () => console.log(`Server started on port ${port}`));
+=======
+const PORT = process.env.PORT || PORT;
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
+>>>>>>> da24e3135089337b3778bd3db629825c465a8a7d

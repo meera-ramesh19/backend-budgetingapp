@@ -4,7 +4,7 @@ const transactionArray = require('../models/transactions');
 
 transactions.use(express.json());
 
-// router.use('/:id', (req, res, next) => {
+// transactions.use('/:id', (req, res, next) => {
 //   if (!transactionArray[req.params.id]) {
 //     res.status(404).send('Not Found');
 //   } else {
@@ -31,7 +31,7 @@ transactions.get('/', (req, res) => {
 // Create
 transactions.post('/', (req, res) => {
   const userTransaction = {
-    transId: Date.now(),
+    transId: new Date(),
     itemName: req.body.itemName,
     date: req.body.date,
     amount: req.body.amount,
@@ -59,7 +59,7 @@ transactions.post('/', (req, res) => {
 transactions.put('/:id', (req, res) => {
   const id = req.params.id;
   const userTransaction = {
-    transId: Date.now(),
+    transId: new Date(),
     itemName: req.body.itemName,
     date: req.body.date,
     amount: req.body.amount,
@@ -76,12 +76,8 @@ transactions.put('/:id', (req, res) => {
     typeof userTransaction.category === 'string' &&
     typeof userTransaction.type === 'string'
   ) {
-    if (transactionArray[id]) {
-      transactionArray[id] = newLog;
-      res.json(userTransaction);
-    } else {
-      res.send({ error: 'Not found' });
-    }
+    transactionArray[id] = userTransaction;
+    res.json(userTransaction);
   } else {
     res.redirect('/error');
   }
@@ -89,13 +85,13 @@ transactions.put('/:id', (req, res) => {
 
 //DELETE
 transactions.delete('/:id', (req, res) => {
-  const { id } = req.params;
-  if (transactionArray[req.params.id]) {
-    const deletedLog = transactionArray.splice(req.params.id, 1);
+  const id = req.params.id;
+  if (transactionArray[id]) {
+    transactionArray.splice(id, 1);
     res.send('Transaction deleted');
   } else {
     res.status(404).redirect('/error');
   }
 });
 
-module.exports=transactions;
+module.exports = transactions;

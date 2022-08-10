@@ -3,7 +3,7 @@ module.exports = [
     transId: Date.now(),
     itemName: 'salary',
     amount: 2000,
-    date: '04/01/2022',
+    date: '03/04/2022',
     from: 'employer',
     category: 'income',
     type: 'income',
@@ -21,7 +21,11 @@ module.exports = [
   {
     transId: Date.now(),
     itemName: 'pension',
+<<<<<<< HEAD
     date: '04/05/2022',
+=======
+    date: '04/04/2022',
+>>>>>>> da24e3135089337b3778bd3db629825c465a8a7d
     amount: 100,
     from: 'bank',
     category: 'bills',
@@ -41,8 +45,8 @@ module.exports = [
   {
     transId: Date.now(),
     itemName: 'food',
-    date: 'April 3 2022',
-    amount: 40,
+    date: '01/05/2022',
+   amount: 40,
     from: 'grocery',
     category: 'food',
     type: 'expense',
