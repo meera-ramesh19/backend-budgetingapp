@@ -27,10 +27,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
-<<<<<<< HEAD
     "moment": "^2.29.4",
-=======
->>>>>>> da24e3135089337b3778bd3db629825c465a8a7d
     "mongoose": "^6.5.0"
   }
 }

@@ -21,11 +21,7 @@ module.exports = [
   {
     transId: Date.now(),
     itemName: 'pension',
-<<<<<<< HEAD
-    date: '04/05/2022',
-=======
     date: '04/04/2022',
->>>>>>> da24e3135089337b3778bd3db629825c465a8a7d
     amount: 100,
     from: 'bank',
     category: 'bills',
